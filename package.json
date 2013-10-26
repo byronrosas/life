@@ -1,0 +1,22 @@
+{
+  "name": "Life",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "mongodb": "*",
+    "express": "3.1.x",
+    "swig": "*",
+    "consolidate": "*",
+    "socket.io":"*"    
+  },
+"engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+}
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/ejercicio.css">
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script language="javaScript" src="/javascript/modernizr.custom.13723.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script type="text/javascript" src="/javascript/ejercicio.js">
+		
+	</script>
+</head>
+<body>
+	<ul class="nav nav-pills">
+  <li class="active">
+	<a href="/salir" id="salir">Salir</a>
+</li>
+<li class="active">
+	<a href="/menu" id="menu">Guardar e ir al menu</a>
+</li>
+</ul>
+<h1 id="h1">El Ejercicio</h1>
+<div id="indicacion">En mente sana cuerpo sano, selecciona los tipos de deportes que prácticas y el tiempo en que los realizas.</div>
+	<div id="tiempo">
+		
+		<section>
+			<form id="frm" method="GET" class="form-horizontal">
+				<div id="contenedor_frm">
+					<label for="minutos">Minutos de ejercicio por semana(Aprox)</label>
+				<div class="control-group">
+				<input type="number" name="minutos" id="spinner" min="0" max="150" step="10" class="input-small" /><label id="lbl_minutos" >minutos.</label>
+				<input type="submit" name="enviar_horas" value="Guardar y volver"  class="btn btn-inverse"/><input type="button" name="volver" value="Volver" id="volver" class="btn btn-inverse"/>
+				</div>
+				</div>		
+			</form>
+		
+		</section>
+	</div>
+	<img src="/images/aerobicos.png" id="aerobicos" class="capa2"  data-porcentaje="0.70"></div>
+	<img src="/images/anaerobicos.png" id="anaerobicos" class="capa2" data-porcentaje="0.90"></div>
+	<img src="/images/artes-marciales.png" id="artes_marciales" class="capa2" data-porcentaje="0.80"></div>
+	<img src="/images/ninguno.png" id="ninguno" class="capa2" data-porcentaje="0"></div>
+	<img src="/images/otros.png" id="otros" class="capa2" data-porcentaje="0.60"></div>
+
+</body>
+</html>

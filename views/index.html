@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/progress_ring.css" />
+</head>
+<body>
+	<div>
+		<div id="termometro">
+			
+			<div id="content_progress"><div id="val">
+		
+		</div></div>
+		<div id="progreso"></div>
+		</div>
+		<img src="/images/corazon.png"/>
+
+	</div>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+	var x=0;
+	$(document).on('ready',function(){
+		progreso();
+	});
+
+	function progreso()
+	{
+		var timer;
+		
+		if(x<250){
+        x++;
+         console.log(x);
+         var y=(x*100)/250;
+         y=Math.floor(y)    
+         $('#progreso').html(y+'%'); 
+         $('#val').css('width',x+'px');
+        timer=setTimeout('progreso()',15);
+    }else{
+        x=0;
+        progreso();
+        clearTimeout(timer);
+        location.href='/menu';
+    }
+	}
+	/*	var x=0;
+window.onload=progress();
+
+function progress(){
+    var timer;
+   
+    if(x<100){
+        x++;
+         console.log(x);  
+       document.getElementById('progress').value=x;  
+
+        timer=setTimeout('progress()',15);
+    }else{
+        x=0;
+        progress();
+        clearTimeout(timer);
+        location.href='';
+    }
+}*/
+	</script>
+
+	<!--<div style="width:20cm; background:black; overflow:hidden;">
+	<div id="img_alimento"></div>
+	<div id="progress_ring"></div>
+	</div>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script>
+	/*	$(document).ready(function() {
+			$('#img_alimento').addClass('alimento');
+			var l=$('#img_alimento').css('left');
+			posicion();
+				
+});
+		function posicion()
+		{
+			
+			
+			var img_alimento=document.getElementById("img_alimento");
+			img_alimento.addEventListener("webkitAnimationEnd",function(){
+					var i=$('#img_alimento').css("WebkitAnimationIterationCount");
+					if(i==1)
+					{
+						console.log(i);
+			var r=Math.floor((Math.random()*2)+1);
+			if(r==1)
+			{
+$('#img_alimento').css('background-color','blue');
+$('#img_alimento').addClass('alimento');
+			}
+			else
+			{
+			$('#img_alimento').css('background-color','red');	
+			$('#img_alimento').addClass('alimento');
+			}
+					}
+				/*	$('#img_alimento').css("WebkitAnimationPlayState","paused");
+					//while()
+					//{
+					$('#img_alimento').css('background-color','blue');
+					//}
+					console.log("ola");
+					$('#img_alimento').css("WebkitAnimationPlayState","running");*/
+		//	$('#img_alimento').removeClass('alimento').addClass('alimento');
+			/*},false);
+		}*/
+		
+	</script>-->
+
+</body>
+</html>

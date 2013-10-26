@@ -1,0 +1,112 @@
+
+@font-face
+{
+	font-family: titulo;
+	src:url(/stylesheets/FrederickatheGreat-Regular.ttf);
+}
+@font-face
+{
+	font-family: articulo;
+	src:url(/stylesheets/Oldenburg-Regular.ttf);
+
+}
+body
+{
+	background: url(/images/fondo_resultados.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+h1
+{
+	font-family: titulo;
+	font-size:5em;
+	padding: 0px;
+	position: absolute;
+	top:10%;
+	z-index: 1;
+	color: black;
+}
+label
+{
+	font-family: titulo;
+	color: white;
+}
+
+h2
+{
+	font-family: titulo;
+	color: white;
+}
+
+h2 label
+{
+color: white;
+font-family: arial,helvetica;
+font-size: 14px;
+}
+
+#menu
+{
+background-color: #75C010;
+border-radius: 10px;
+padding: 5px;
+}
+a 
+{
+	text-decoration: none;
+	color:white;
+	font-size:0.5cm;
+	cursor: pointer;
+}
+#alimentacion_
+{
+	position: absolute;
+	z-index: 2;
+	top:1%;
+	right: 1%;
+}
+#ejercicio_
+{
+position: absolute;
+	z-index: 2;
+	bottom:1%; 
+	right:30%;
+	
+}
+#estres_
+{
+	position: absolute;
+	z-index: 2;
+	bottom: 3%;
+	right: 1%;
+}
+
+#ar_med_
+{
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 1%;
+}
+
+.progress
+{
+
+	border:1px solid #bebebe; 
+	background:#ffffff;
+	 width:300px; height:14px; 
+	 -moz-border-radius:10px; 
+	 -webkit-border-radius:10px;
+border-radius:10px; 
+	border-radius:10px;
+	overflow:hidden;
+	display:inline-block;
+}
+
+
+
+.valor
+{
+	display:inline;
+}

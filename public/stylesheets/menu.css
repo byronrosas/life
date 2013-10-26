@@ -1,0 +1,181 @@
+body
+{
+	border: 0;
+
+	background-color:#272822;
+
+}
+img
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	bottom:0px;
+}
+
+
+form
+{
+	position: absolute;
+	top: 40%;
+	left: 41%;
+	z-index: 4;
+	display: block;
+	background-color:#171717;
+	border-radius: 20px;
+
+}
+
+
+
+#salir
+{
+	margin: 0 0;
+	position: absolute;
+	z-index: 3;
+}
+#resultados
+{
+position: absolute;
+	z-index: 2;	
+}
+#menu_alimentos
+{
+	top: 0%;
+	left: 0%;
+}
+
+#resultados
+{
+background-color: #75C010;
+border-radius: 10px;
+padding: 5px;
+margin:0 0 0 1.5cm;
+
+
+}
+#resultados:hover
+{
+	background-color:#71CF2C; 
+}
+
+#salir
+{
+background-color: #75C010;
+border-radius: 10px;
+padding: 5px;
+}
+#salir:hover
+{
+	background-color:#71CF2C; 
+}
+a 
+{
+	text-decoration: none;
+	color:white;
+	font-size:0.5cm;
+	cursor: pointer;
+}
+
+#txtusuario
+{
+	border-radius: 10px;
+}
+#menu_ejercicio
+{	
+	top: 0%;
+	left:50%;
+}
+
+#menu_diversion
+{
+	top: 50%;
+	left: 0%;
+}
+
+#menu_hospital
+{
+	top: 50%;
+	left: 50%;
+}
+#log_reg
+{
+	background-color:rgba(2,10,106,0.7);
+	position:fixed;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+#contenedor_frm
+{
+	background: -webkit-linear-gradient(#313131,#171717);
+	background: -moz-linear-gradient(#313131,#171717);
+	background: -o-linear-gradient(#313131,#171717);
+	background: linear-gradient(#313131,#171717);
+	background-size:100%;
+	padding: 10%;
+	color:white;
+	border-radius: 20px;
+
+}
+
+
+.btninverse
+{
+	background:#313131;
+	border: none;
+	color: #B6B8AB;
+	border-radius: 5px;
+	font-size: 15px;
+	
+}
+.btninverse:hover
+{
+	background:#262721;
+	border: none;
+	color: white;
+}
+
+#titulo
+{
+	top:40%;
+	left:40%;
+}
+
+#txtusuario
+{
+	display: inline;
+}
+
+.capa_2
+{
+	position: absolute;
+	z-index: 2;
+	width: 50%;
+	height: 50%;
+	cursor: pointer;
+}
+.capa_3
+{
+	position: absolute;
+	z-index: 3;
+	width: 20% ;
+	height: 20%;
+}
+.reg
+{
+	display:none;
+	border-radius: 10px;
+}
+.titulo2
+{
+	width:30% ;
+	height:30% ;
+	position: absolute;
+	top:10%;
+	left: 35%;
+}

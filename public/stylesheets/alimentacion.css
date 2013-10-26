@@ -1,0 +1,575 @@
+@font-face
+{
+	font-family: titulo;
+	src:url(/stylesheets/FrederickatheGreat-Regular.ttf);
+}
+
+@font-face
+{
+	font-family: articulo;
+	src:url(/stylesheets/Oldenburg-Regular.ttf);
+
+}
+
+body
+{
+	background:url(/images/fondo_alimentacion.png); 
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#h1
+{
+	font-family:titulo;
+	font-size:5em;
+	padding: 0px;
+	position: absolute;
+	top:7%;
+	z-index: 2;
+}
+
+
+#canasta
+{
+	position: absolute;
+	right: 25%;
+	bottom: 0%;
+	width: 25%;
+	height: 35%;
+	-webkit-animation:canasta 5s none ease-in-out;
+	-moz-animation:canasta 5s none ease-in-out;
+	-o-animation:canasta 5s none ease-in-out;
+	animation:canasta 5s none ease-in-out;
+}
+#papas
+{
+	position: absolute;
+	left: 20%;
+	bottom: 5%;
+	width: 15%;
+	height:20%;
+	-webkit-animation:papas 3s none ease-in-out;
+	-moz-animation:papas 3s none ease-in-out;
+	-o-animation:papas 3s none ease-in-out;
+	animation:papas 3s none ease-in-out;
+}
+#dulces
+{
+	position: absolute;
+	left: 12%;
+	top: 38%;
+	width: 7%;
+	height:18%;
+}
+#donas
+{
+	position: absolute;
+	left: 2%;
+	top: 38%;
+	width: 8%;
+	height:15%;
+}
+#verduras
+{
+	position: absolute;
+	right:10%;
+	bottom: 5%;
+	width: 13%;
+	height:22%;
+		-webkit-animation:verduras 3s none ease-in-out;
+	-moz-animation:verduras 3s none ease-in-out;
+	-o-animation:verduras 3s none ease-in-out;
+	animation:verduras 3s none ease-in-out;
+}
+#arroz
+{
+	position: absolute;
+	left: 22%;
+	top: 50%;
+	width: 8%;
+	height:16%;
+}
+#uvas
+{
+	position: absolute;
+	left:10%;
+	top: 50%;
+	width: 6%;
+	height:16%;
+}
+#cigarrillos
+{
+	position: absolute;
+	left: 25%;
+	top: 22%;
+	width: 10%;
+	height:18%;
+}
+#colas
+{
+	position: absolute;
+	left: 2%;
+	top: 17%;
+	width: 6%;
+	height:20%;
+}
+#naranjas
+{
+	position: absolute;
+	right: 0%;
+	bottom: 2%;
+	width: 13%;
+	height:23%;
+		-webkit-animation:naranjas 3s none ease-in-out;
+	-moz-animation:naranjas 3s none ease-in-out;
+	-o-animation:naranjas 3s none ease-in-out;
+	animation:naranjas 3s none ease-in-out;
+}
+#sandia
+{
+	position: absolute;
+	left: 1%;
+	top: 51%;
+	width: 9%;
+	height:14%;
+}
+#cerveza
+{
+	position: absolute;
+	left: 15%;
+	top: 16%;
+	width: 7%;
+	height:22%;
+}
+#panes
+{
+	position: absolute;
+	left: 15%;
+	top: 28%;
+	width: 18%;
+	height:27%;
+}
+#pescados
+{
+	position: absolute;
+	left: 1%;
+	bottom: 3%;
+	width: 15%;
+	height:22%;
+	-webkit-animation:pescado 2s none ease-in-out;
+	-moz-animation:pescado 2s none ease-in-out;
+	-o-animation:pescado 2s none ease-in-out;
+	animation:pescado 2s none ease-in-out;
+}
+#pollo
+{
+	position: absolute;
+	left:30%;
+	top: 40%;
+	width: 12%;
+	height:18%;
+}
+#huevos
+{
+	position: absolute;
+	left: 10%;
+	bottom: 5%;
+	width: 15%;
+	height:22%;
+	-webkit-animation:huevos 2s none ease-in-out;
+	-moz-animation:huevos 2s none ease-in-out;
+	-o-animation:huevos 2s none ease-in-out;
+	animation:huevos 2s none ease-in-out;
+}
+#leche
+{
+	position: absolute;
+	left: 8%;
+	top: 17%;
+	width: 6%;
+	height:23%;
+}
+#carne
+{
+	position: absolute;
+	left:35%;
+	top: 20%;
+	width: 10%;
+	height:12%;
+}
+
+#grupo1 img 
+{
+	cursor: pointer;
+}
+
+#grupob img 
+{
+	cursor: pointer;
+}
+
+#grupo3 img 
+{
+	cursor: pointer;
+}
+
+#indicacion
+{
+	position: relative;
+	top: 10%;
+	left:75%;
+	z-index: 2;	
+	width: 20%;
+	height: 10%;
+	word-wrap: break-word; 
+	background-color: rgba(124,31,108,0.5);
+	border-radius: 10px;
+	color: rgba(255,255,255,1);
+	padding: 2%;
+}
+
+@-webkit-keyframes canasta
+{
+	0%
+	{
+		top:-35%;
+	}	
+	50%
+	{
+		top: 40%;
+	}
+	60%
+	{
+		bottom:1%; 
+	}
+	100%
+	{
+		top: 65%;
+	}
+} 
+
+@-webkit-keyframes papas
+{
+	0%
+	{
+		left:-15%;
+	}	
+	100%
+	{
+		left:20%;
+	}
+} 
+
+@-webkit-keyframes pescado
+{
+	0%
+	{
+		left:-15%;
+	}	
+	100%
+	{
+		left:1%;
+	}
+} 
+
+
+@-webkit-keyframes huevos
+{
+	0%
+	{
+		left:-10%;
+	}	
+	100%
+	{
+		left:10%;
+	}
+} 
+
+
+@-webkit-keyframes naranjas
+{
+	0%
+	{
+		right:-10%;
+	}	
+	100%
+	{
+		right:0%;
+	}
+} 
+
+
+@-webkit-keyframes verduras
+{
+	0%
+	{
+		right:-10%;
+	}	
+	100%
+	{
+		right:10%;
+	}
+} 
+
+
+
+
+
+
+
+
+@-moz-keyframes canasta
+{
+	0%
+	{
+		top:-35%;
+	}	
+	50%
+	{
+		top: 40%;
+	}
+	60%
+	{
+		bottom:1%; 
+	}
+	100%
+	{
+		top: 65%;
+	}
+} 
+
+@-moz-keyframes papas
+{
+	0%
+	{
+		left:-15%;
+	}	
+	100%
+	{
+		left:20%;
+	}
+} 
+
+@-moz-keyframes pescado
+{
+	0%
+	{
+		left:-15%;
+	}	
+	100%
+	{
+		left:1%;
+	}
+} 
+
+
+@-moz-keyframes huevos
+{
+	0%
+	{
+		left:-10%;
+	}	
+	100%
+	{
+		left:10%;
+	}
+} 
+
+
+@-moz-keyframes naranjas
+{
+	0%
+	{
+		right:-10%;
+	}	
+	100%
+	{
+		right:0%;
+	}
+} 
+
+
+@-moz-keyframes verduras
+{
+	0%
+	{
+		right:-10%;
+	}	
+	100%
+	{
+		right:10%;
+	}
+}
+
+
+
+
+
+@-o-keyframes canasta
+{
+	0%
+	{
+		top:-35%;
+	}	
+	50%
+	{
+		top: 40%;
+	}
+	60%
+	{
+		bottom:1%; 
+	}
+	100%
+	{
+		top: 65%;
+	}
+} 
+
+@-o-keyframes papas
+{
+	0%
+	{
+		left:-15%;
+	}	
+	100%
+	{
+		left:20%;
+	}
+} 
+
+@-o-keyframes pescado
+{
+	0%
+	{
+		left:-15%;
+	}	
+	100%
+	{
+		left:1%;
+	}
+} 
+
+
+@-o-keyframes huevos
+{
+	0%
+	{
+		left:-10%;
+	}	
+	100%
+	{
+		left:10%;
+	}
+} 
+
+
+@-o-keyframes naranjas
+{
+	0%
+	{
+		right:-10%;
+	}	
+	100%
+	{
+		right:0%;
+	}
+} 
+
+
+@-o-keyframes verduras
+{
+	0%
+	{
+		right:-10%;
+	}	
+	100%
+	{
+		right:10%;
+	}
+}
+
+
+
+
+@keyframes canasta
+{
+	0%
+	{
+		top:-35%;
+	}	
+	50%
+	{
+		top: 40%;
+	}
+	60%
+	{
+		bottom:1%; 
+	}
+	100%
+	{
+		top: 65%;
+	}
+} 
+
+@keyframes papas
+{
+	0%
+	{
+		left:-15%;
+	}	
+	100%
+	{
+		left:20%;
+	}
+} 
+
+@keyframes pescado
+{
+	0%
+	{
+		left:-15%;
+	}	
+	100%
+	{
+		left:1%;
+	}
+} 
+
+
+@keyframes huevos
+{
+	0%
+	{
+		left:-10%;
+	}	
+	100%
+	{
+		left:10%;
+	}
+} 
+
+
+@ keyframes naranjas
+{
+	0%
+	{
+		right:-10%;
+	}	
+	100%
+	{
+		right:0%;
+	}
+} 
+
+
+@keyframes verduras
+{
+	0%
+	{
+		right:-10%;
+	}	
+	100%
+	{
+		right:10%;
+	}
+}

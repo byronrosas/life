@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Resultados</title>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	  
+	<link rel="stylesheet" href="/stylesheets/resultados.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="/javascript/resultados.js">
+		
+	</script>
+</head>
+<body>
+	<div><a href="/menu" id="menu">Ir al menu</a></div>
+	<h1>Resultados</h1>
+	<div id="alimentacion_">
+	<h2>Alimentación(<label>0%-Mala/100%-Buena</label>)</h2>
+	<div id="alimentacion_msg" style="color:white;">
+	</div>
+	<div id="alimentacion">
+	<label for="tipo">Proteinas:</label><br/>
+	<div class="progress">
+	<div id="progressbar_proteinas" style="background:#222528;  height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;" ></div></div><label for="valor1" class="valor" ></label><br/>
+
+
+	<label for="tipo">Hidratos:</label><br/>
+	<div class="progress">
+	<div id="progressbar_hidratos" style="background:#8D633D;  height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;"></div>
+</div><label for="valor2" class="valor" ></label><br/>
+
+
+	<label for="tipo">Grasas:</label><br/>
+	<div class="progress">
+	<div id="progressbar_grasas"  style="background:#7424B5; height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;"></div>
+	</div><label for="valor3" class="valor" ></label><br/>
+
+
+	<label for="tipo">Vitaminas:</label><br/>
+	<div class="progress">
+	<div id="progressbar_vitaminas"  style="background:#FF00FF;  height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;"></div>
+	</div><label for="valor4" class="valor" ></label><br/>
+
+
+	<label for="tipo">Minerales:</label><br/>
+	<div class="progress">
+	<div id="progressbar_minerales"  style="background:#FF8000;  height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;"></div>
+	</div><label for="valor5" class="valor" ></label><br/>
+
+
+	<label for="tipo">Fibra:</label><br/>
+	<div class="progress">
+	<div id="progressbar_fibra"  style="background:#001B4A;  height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;  "></div>
+	</div><label for="valor6" class="valor" ></label></div><br/>
+	</div>
+	<div id="ejercicio_">
+	<h2>Ejercicio(<label>0% a 80%-Normal/80% a 100%-No aconsejable.</label>)</h2>
+
+	<div id="ejercicio_msg" style="color:white;">
+	</div>
+	<div id="ejercicio">
+	<label for="tipo">Aerobicos:</label><br/>
+	<div class="progress">
+	<div id="progressbar_aerobicos" style="background:#222528;  height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;" ></div></div><label for="valor7" class="valor" ></label><br/>
+
+
+	<label for="tipo">Anaerobicos:</label><br/>
+	<div class="progress">
+	<div id="progressbar_anaerobicos" style="background:#8D633D;  height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;"></div>
+</div><label for="valor8" class="valor" ></label><br/>
+
+
+	<label for="tipo">Artes marciales:</label><br/>
+	<div class="progress">
+	<div id="progressbar_am"  style="background:#7424B5; height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;"></div>
+	</div><label for="valor9" class="valor" ></label><br/>
+
+
+	<label for="tipo">Ningún ejercicio:</label><br/>
+	<div class="progress">
+	<div id="progressbar_ninguno"  style="background:#FF00FF;  height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;"></div>
+	</div><label for="valor10" class="valor" ></label><br/>
+
+
+	<label for="tipo">Otros:</label><br/>
+	<div class="progress">
+	<div id="progressbar_otros"  style="background:#FF8000;  height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;"></div>
+	</div><label for="valor11" class="valor" ></label></div><br/>
+
+	</div>
+	<div id="estres_">
+	<h2>Estres(<label>0%-Sin estres/100%-Estres avanzado</label>)</h2>
+	<div id="estres_msg" style="color:white;">
+	</div>
+	<div id="estres">
+	<label for="tipo">Físico:</label><br/>
+	<div class="progress">
+	<div id="progressbar_fisico"  style="background:#7424B5; height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;"></div>
+	</div><label for="valor12" class="valor" ></label><br/>
+
+
+	<label for="tipo">Psicologico:</label><br/>
+	<div class="progress">
+	<div id="progressbar_psicologico"  style="background:#FF00FF;  height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;"></div>
+	</div><label for="valor13" class="valor" ></label><br/>
+
+
+	<label for="tipo">Social:</label><br/>
+	<div class="progress">
+	<div id="progressbar_social"  style="background:#FF8000;  height:14px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; border-radius:10px;"></div>
+	</div><label for="valor14" class="valor" ></label></div><br/>
+	</div>
+	<div id="ar_med_">
+	<h2>Área médica </h2>
+	<div id="ar_medica_msg" style="color:white;"></div>
+	<div id="ar_medica">
+		<div id="citas">
+		<label for="ultima_cita">Ultima cita:  </label><label for="fech_ultima_cita"></label><br/>
+		<label for="prox_cita">Proxima cita:  </label><label for="fech_prox_cita"></label>
+		</div><br/>
+		<div id="enfermedad">
+			<label>Datos del médico: </label><br/>
+			<label for="medico">Nombre: </label><label for="medico_dato"></label><br/>
+			<label for="especialidad">Especialidad: </label><label for="especialidad_dato"></label><br/>
+			<label for="telefono">Teléfono: </label><label for="telefono_dato"></label><br/>
+			<label for="direccion_hospital">Hospital donde labora</label>:<label for="direccion_dato"></label><br/>
+			<label>Enfermedad:</label><br/>
+			<label for="enfermedad_dato"></label>
+
+	</div>			
+			
+		</div>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alimentación</title>
+	<link rel="stylesheet" href="/stylesheets/alimentacion.css">
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="/javascript/alimentacion.js">
+    </script>
+</head>
+<body>
+	<ul class="nav nav-pills">
+  <li class="active">
+	<a href="/salir" id="salir">Salir</a>
+</li>
+<li class="active">
+	<a href="/menu" id="menu">Guardar e ir al menu</a>
+</li>
+</ul>
+	<h1 id="h1">La Alimentación</h1>
+	<img src="/images/canasta.png" id="canasta" />
+	<div id="indicacion">La buena alimentación es un factor importante para llevar un buen estilo de vida, elige los alimentos que  consumes a diario y arrastralos a la canasta de compras.</div>
+	<section>
+		<div id="grupo3">
+		<img src="/images/naranjas.png" class="alimentos" id="naranjas" data-img="naranjas2.png" data-proteina="1.16" data-hidratos="3.18" data-grasas="0.19" data-vitaminas="70" data-minerales="0.2"  data-fibra="2.4">
+		<img src="/images/verduras.png" class="alimentos" id="verduras" data-img="verduras.png" data-proteina="16.22" data-hidratos="7.13" data-grasas="0.25" data-vitaminas="40" data-minerales="0.44"  data-fibra="3.8" >
+		</div>
+		<div id="grupob">
+	<img src="/images/papas.png" class="alimentos" id="papas" data-img="papas2.png" data-proteina="2" data-hidratos="19" data-grasas="0.1" data-vitaminas="0.4" data-minerales="0.5"  data-fibra="2" >
+	<img src="/images/pescados.png" class="alimentos" id="pescados" data-img="pescados2.png" data-proteina="20.08" data-hidratos="0" data-grasas="1.70" data-vitaminas="0.05" data-minerales="0.6"  data-fibra="0">
+	</div>
+	<div id="grupo1">
+	<img src="/images/arroz.png" class="alimentos" id="arroz" data-img="arroz.png" data-proteina="4.2" data-hidratos="50.6" data-grasas="34" data-vitaminas="0" data-minerales="0.8"  data-fibra="2.1" >
+	<img src="/images/uvas.png" class="alimentos" id="uvas" data-img="uvas.png" data-proteina="0.81" data-hidratos="13.33" data-grasas="0.47" data-vitaminas="4.32" data-minerales="1"  data-fibra="3.9">
+	<img src="/images/cigarrillos.png" class="alimentos" id="cigarrillos" data-img="cigarrillos2.png" data-proteina="0" data-hidratos="0" data-grasas="0" data-vitaminas="0" data-minerales="0"  data-fibra="0">
+	<img src="/images/cola.png" class="alimentos" id="colas" data-img="cola2.png" data-proteina="0" data-hidratos="10.58" data-grasas="0" data-vitaminas="0" data-minerales="0.02"  data-fibra="0">
+	<img src="/images/sandia.png" class="alimentos" id="sandia" data-img="sandia2.png" data-proteina="0.61" data-hidratos="7.55" data-grasas="0.15" data-vitaminas="31.10" data-minerales="0.14"  data-fibra="0.4">
+	<img src="/images/cerveza.png" class="alimentos" id="cerveza" data-img="cerveza2.png" data-proteina="0.24" data-hidratos="1.64" data-grasas="0" data-vitaminas="0" data-minerales="0.05"  data-fibra="0">
+	<img src="/images/panes.png" class="alimentos" id="panes" data-img="panes2.png" data-proteina="9.15" data-hidratos="48.06" data-grasas="3.19" data-vitaminas="1" data-minerales="1"  data-fibra="2.7">
+	<img src="/images/pollo.png" class="alimentos" id="pollo" data-img="pollo.png" data-proteina="27.44" data-hidratos="0.04" data-grasas="8.44" data-vitaminas="0" data-minerales="0.8"  data-fibra="0">
+	<img src="/images/huevos.png" class="alimentos" id="huevos" data-img="huevos2.png" data-proteina="48.37" data-hidratos="1.53" data-grasas="43.04" data-vitaminas="0.6" data-minerales="1.93"  data-fibra="0">
+	<img src="/images/leche.png" class="alimentos" id="leche" data-img="leche.png" data-proteina="3.3" data-hidratos="14" data-grasas="3.1" data-vitaminas="0.25" data-minerales="0.6"  data-fibra="0">
+	<img src="/images/carne.png" class="alimentos" id="carne" data-img="carne2.png" data-proteina="18.6" data-hidratos="0.5" data-grasas="2.4" data-vitaminas="0" data-minerales="0.5"  data-fibra="0">
+	<img src="/images/dulces.png" class="alimentos" id="dulces" data-img="caramelo2.jpg.png" data-proteina="6.19" data-hidratos="73.81" data-grasas="21" data-vitaminas="0" data-minerales="0.83"  data-fibra="1.2">
+	<img src="/images/donas.png" class="alimentos" id="donas" data-img="donas2.png" data-proteina="4.93" data-hidratos="51.33" data-grasas="25.25" data-vitaminas="0.5" data-minerales="0.8"  data-fibra="1.9" >
+</div>
+	</section>
+</body>
+</html>

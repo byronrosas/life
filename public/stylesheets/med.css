@@ -1,0 +1,153 @@
+
+@font-face
+{
+	font-family: titulo;
+	src:url(/stylesheets/FrederickatheGreat-Regular.ttf);
+}
+@font-face
+{
+	font-family: articulo;
+	src:url(/stylesheets/Oldenburg-Regular.ttf);
+
+}
+body
+{
+	background: url(/images/menu_med.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#h1
+{
+	font-family: titulo;
+	font-size:5em;
+	padding: 0px;
+	position: absolute;
+	top:10%;
+	z-index: 1;
+	color: black;
+}
+
+#div_frm_secundario
+{
+	position: fixed;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	display:none;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(2,10,106,0.7);
+	
+}
+
+label
+{
+	color: white;
+}
+
+caption
+{
+	color: white;
+	font-weight: 10px;
+}
+
+#med_dat
+{
+	color: white;
+	font-size: 2em;
+	font-weight: 20px;
+}
+
+#radios
+{
+	background: red;
+	width: 60%;
+	height: 4cm;
+}
+
+#frm_principal
+{
+	margin: 10% auto;
+	width: 70%;
+	height: 30%;
+}
+
+#frm_secundario 
+{
+	background: -webkit-linear-gradient(#313131,#171717);
+	background: -moz-linear-gradient(#313131,#171717);
+	background: -o-linear-gradient(#313131,#171717);
+	background: linear-gradient(#313131,#171717);
+	background-size:100%;
+	padding: 2%;
+	color:white;
+	width: 40%;
+	height: auto;
+	border-radius: 20px;
+	margin: 10% auto;
+}
+#corazon
+{
+	background-size:cover;
+	position: absolute;
+	top:6%;
+	right:6%; 
+	width: 8cm;
+	height: 5cm;
+	padding-top: 0px;
+	-webkit-animation:corazon 1s infinite ease-in-out;
+	-moz-animation:corazon 1s infinite ease-in-out;
+	-o-animation:corazon 1s infinite ease-in-out;
+	animation:corazon 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes corazon
+{
+	from{
+			width: 8cm;
+			height: 5cm;
+	}
+	to{
+			width: 9cm;
+			height: 6cm;
+	}
+}
+@-moz-keyframes corazon
+{
+	from{
+			width: 8cm;
+			height: 5cm;
+	}
+	to{
+			width: 9cm;
+			height: 6cm;
+	}
+}
+@-o-keyframes corazon
+{
+	from{
+			width: 8cm;
+			height: 5cm;
+	}
+	to{
+			width: 9cm;
+			height: 6cm;
+	}
+}
+@keyframes corazon
+{
+	from{
+			width: 8cm;
+			height: 5cm;
+	}
+	to{
+			width: 9cm;
+			height: 6cm;
+	}
+}
+.bg_citas
+{
+	background-color: rgba(224,5,181,0.5);
+	border-radius: 20px;
+}

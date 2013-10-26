@@ -1,0 +1,231 @@
+@font-face
+{
+	font-family: titulo;
+	src:url(/stylesheets/FrederickatheGreat-Regular.ttf);
+}
+@font-face
+{
+	font-family: articulo;
+	src:url(/stylesheets/Oldenburg-Regular.ttf);
+
+}
+body 
+{
+background:url(/images/fondo_ejercicio.png); 
+background-repeat: no-repeat;
+background-size: 100%;
+}
+form
+{
+	position: absolute;
+	top: 35%;
+	left: 41%;
+	z-index: 4;
+	display: block;
+	background-color:#171717;
+	border-radius: 20px;
+
+}
+
+#minutos
+{
+	font-size:0.5cm;
+}
+#contenedor_frm
+{
+	background: -webkit-linear-gradient(#313131,#171717);
+	background: -moz-linear-gradient(#313131,#171717);
+	background: -o-linear-gradient(#313131,#171717);
+	background: linear-gradient(#313131,#171717);
+	background-size:100%;
+	padding: 10%;
+	color:white;
+	border-radius: 20px;
+
+}
+#tiempo
+{
+	background-color:rgba(2,10,106,0.7);
+	display:none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+#h1
+{
+	font-family: titulo;
+	font-size:5em;
+	padding: 0px;
+	position: absolute;
+	top:10%;
+	z-index: 2;
+	color: black;
+}
+
+div#indicacion
+{
+	position: absolute;
+	top: 30%;
+	left:1%;
+	z-index: 2;	
+	width: 20%;
+	height: 10%;
+	word-wrap: break-word; 
+	background-color: rgba(124,31,108,0.5);
+	border-radius: 10px;
+	color: rgba(255,255,255,1);
+	padding: 2%;
+	-webkit-animation:articuloA 3s none ease-in-out;
+	-moz-animation:articuloA 3s none ease-in-out;
+	-o-animation:articuloA 3s none ease-in-out;
+	animation:articuloA 3s none ease-in-out;
+}
+
+
+
+#aerobicos
+{
+	top:25%;
+
+}
+
+#anaerobicos
+{
+	top:37%;
+
+}
+
+#artes_marciales
+{
+	top:50%;
+
+}
+#ninguno
+{
+	top:62%;
+
+}
+
+#otros
+{
+	top:74%;
+
+}
+
+.capa2
+{
+	
+	position: absolute;
+	z-index: 2;
+	width: 34%;
+	height: 11%;
+	right: 1%;
+	-webkit-animation:menu 2s none ease-in;
+	-moz-animation:menu 2s none ease-in;
+	-o-animation:menu 2s none ease-in;
+	animation:menu 2s none ease-in;
+	
+}
+
+
+
+@-webkit-keyframes articuloA
+{
+	0%{
+			top: -20%;
+	}
+	50%{
+			top: 40%;
+	}
+	100%{
+			top:30%;
+	}
+
+}
+
+@-moz-keyframes articuloA
+{
+	0%{
+			top: -20%;
+	}
+	50%{
+			top: 40%;
+	}
+	100%{
+			top:30%;
+	}
+}
+
+@-o-keyframes articuloA
+{
+	0%{
+			top: -20%;
+	}
+	50%{
+			top: 40%;
+	}
+	100%{
+			top:30%;
+	}
+}
+
+
+
+@keyframes articuloA
+{
+	0%{
+			top: -20%;
+	}
+	50%{
+			top: 40%;
+	}
+	100%{
+			top:30%;
+	}
+
+}
+
+
+@-webkit-keyframes menu
+{
+	0%{
+			right:-50%;
+	}
+	100%{
+			right: 50%;
+	}
+
+}
+
+@-moz-keyframes menu
+{
+	0%{
+			left:500%;
+	}
+	100%{
+			left: 400%;
+	}	
+}
+
+@-o-keyframes menu
+{
+	0%{
+			left:500%;
+	}
+	100%{
+			left: 400%;
+	}	
+}
+
+@keyframes menu
+{
+	0%{
+			left:500%;
+	}
+	100%{
+			left: 400%;
+	}	
+}

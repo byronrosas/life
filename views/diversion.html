@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Más diversion</title>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<link rel="stylesheet" href="/stylesheets/estres.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="/javascript/diversion.js">
+	</script>
+</head>
+<body>
+	<div id="resultados" ><a href="/menu" id="menu">Guardar e ir al menu</a></div>
+	<div id="salir" ><a href="/salir">Salir</a></div>
+	<div class="contenedor_principal" style="position:relative">
+	
+	<h1>El estres</h1>
+	<div id="indicacion"><h3>Selecciona</h3>un nivel de estres con el que te identiques en cada categoria:</div>
+	<section id="articulo_estres1">
+		<article>
+			
+			<p>
+				 El agitado ritmo de vida, las exigencias de la rutina y las presiones a las <br/>
+				 que día a día nos vemos sometidos son factores que atentan contra la buena salud <br/>
+				 y que provocan estrés, un mal que aqueja a millones de personas en todo el mundo.
+			</p>
+		</article>
+	</section>
+
+	
+<section id="fisico">
+	<div class="contenedor">
+	<form>
+		<ul id="est_fis">
+		<li><label>Estres físico</label></li>
+		
+		<li><input type="radio" class="radio" name="rd_estres1" data-num="17.85" value="Bajo"/><label>Bajo</label></li>
+		<li><input type="radio" class="radio" name="rd_estres1" data-num="22.32" value="Medio"/><label>Medio</label></li>
+		<li><input type="radio" class="radio" name="rd_estres1" data-num="26.78" value="Elevado"/><label>Elevado</label></li>
+		<li><input type="radio" class="radio" name="rd_estres1" data-num="38.12" value="Critico"/><label>Crítico</label></li>
+	</ul>
+	</form>
+</div>
+</section>
+<section id="psicologico">
+	<div class="contenedor">
+	<form>
+		<ul id="est_ps">
+		<li><label>Estres psicológico</label></li>
+		
+		<li><input type="radio" class="radio" name="rd_estres2" data-num="21.15" value="Bajo"/><label>Bajo</label></li>
+		<li><input type="radio" class="radio" name="rd_estres2" data-num="22.11" value="Medio"/><label>Medio</label></li>
+		<li><input type="radio" class="radio" name="rd_estres2" data-num="24.03" value="Elevado"/><label>Elevado</label></li>
+		<li><input type="radio" class="radio" name="rd_estres2" data-num="32.6" value="Critico"/><label>Crítico</label></li>
+		</ul>
+	</form>
+</div>
+</section>
+<section id="sociales">
+	<div class="contenedor">
+	<form>
+		<ul id="est_soc">
+		<li><label>Estres social</label></li>
+		
+		<li><input type="radio" class="radio" name="rd_estres3" data-num="18" value="Bajo"/><label>Bajo</label></li>
+		<li><input type="radio" class="radio" name="rd_estres3" data-num="22" value="Medio"/><label>Medio</label></li>
+		<li><input type="radio" class="radio" name="rd_estres3" data-num="25" value="Elevado"/><label>Elevado</label></li>
+		<li><input type="radio" class="radio" name="rd_estres3" data-num="35" value="Critico"/><label>Crítico</label></li>
+		</ul>
+	</form>
+</diV>
+</section>
+</div>
+</body>
+</html>

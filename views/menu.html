@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Life</title>
+	<link type="text/css" rel="stylesheet" href="/stylesheets/menu.css"/>
+	<script src="/socket.io/socket.io.js"></script>
+	<script language="javaScript" src="/javascript/modernizr.custom.13723.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script language="javaScript" src="/javascript/menu.js"></script>
+</head>
+<body>
+	<nav>
+		<img src="/images/menu_alimentacion.jpg" id="menu_alimentos" class="capa_2" onclick="menu('alimentacion')" title="Alimentación">
+		<img src="/images/menu_estres.jpg" id="menu_diversion" class="capa_2" onclick="menu('diversion')" title="Estres">
+		<img src="/images/menu_ejercicios.jpg" id="menu_ejercicio" class="capa_2" onclick="menu('ejercicio')" title="Ejercicio">
+		<img src="/images/menu_med.jpg" id="menu_hospital"  class="capa_2" onclick="menu('med')" title="Control médico">
+		<img src="/images/titulo.png" id="titulo" class="capa_3">
+	<div id="salir" ><a href="/salir">Salir</a></div>
+		<div id="resultados" ><a href="/resultados">Ver resultados</a></div>
+	</nav>
+	<section>
+		<div id="log_reg">
+			<img src="/images/titulo.png"  class="titulo2">
+		<form id="frm" method="GET" >
+			<div id="contenedor_frm">
+			<label for="noEncontrado"></label>
+			<label for="nombre_usuario">Nombre de usuario:</label><br/>
+			<input type="text" name="textusuario"  id="txtusuario" />
+			<input type="text" name="textusuario2"   class="reg"/><br/>
+			<label for="edad_usuario" class="reg">Edad:</label>
+			<input type="number" name="textedad" id="spinner" class="reg" max="120" min="1" placeholder="¿Cual es tu edad?"/><label class="reg" class="control-label">años</label><br/>
+			<label for="sexo_usuario" class="reg">Sexo:</label>
+			<input type="radio" name="rd_sexo" class="reg" value="M"/><label class="reg" class="edad">M</label>
+			<input type="radio" name="rd_sexo" class="reg" value="F" class="edad"/><label class="reg">F</label><br/>
+			<center><input type="submit" name="bttenviar_login" id="bttenviar_login" value="Entrar" class="btninverse"/><input type="button" name="bttenviar_registro" id="bttenviar_registro" value="Registrarse" class="btninverse"/></center>
+	</div>
+		</form>
+	
+		</div>
+	</section>
+</body>
+</html>

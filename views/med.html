@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Medica</title>
+	<link rel="stylesheet" href="/stylesheets/med.css">
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script type="text/javascript" src="/javascript/med.js"></script>
+</head>
+<body>
+	
+	<ul class="nav nav-pills">
+  <li class="active">
+	<a href="/salir" id="salir">Salir</a>
+</li>
+<li class="active">
+	<a href="/menu" id="menu">Guardar e ir al menu</a>
+</li>
+</ul>
+	<h1 id="h1">Control médico</h1>
+	<form id="frm_principal" class="form-horizontal">
+		<div class="bg_citas">
+			<center><caption><strong>Llena los siguientes datos: </strong></center>
+		<div class="control-group">
+		<label class="control-label">Ultima cita médica:</label>
+		<input  type="text" name="ultima_cita" class="med_inputs"  id="date" class="controls">
+		</div>
+		<div class="control-group">
+		<label class="control-label">Siguiente cita médica:</label>
+		<input type="text" name="siguiente_cita" class="med_inputs"  id="date2" class="controls">
+		</div>
+	</div>
+		<div class="bg_citas">
+		<table>
+			<caption>Si padeces una enfermedad de las que estan a continuación seleccionala:</caption>
+		<tr>
+			<td>
+		<label class="control-label">Enfermedad del corazón:</label>
+		<input type="radio" id="Enfermedad del corazón." class="med_inputs" name="enfermedades">
+			</td>
+			<td>
+		<label class="control-label">Enfermedad cerebrovascular:</label>
+		<input type="radio" id="Enfermedad cerebrovascular" class="med_inputs" class="controls" name="enfermedades">
+			</td>
+			<td>
+		<label class="control-label">Diabetes:</label>
+		<input type="radio" id="Diabetes." class="med_inputs" name="enfermedades">
+			</td>
+		</tr>
+		<tr>
+			<td>
+		 <label class="control-label">Neumonía:</label>
+		<input type="radio" id="Neumonía." class="med_inputs" name="enfermedades">
+			</td>
+			<td>
+		<label class="control-label">Tumores:</label>
+		<input type="radio" id="Tumores." class="med_inputs" name="enfermedades" >
+			</td>
+			<td>
+		<label class="control-label">Enfermedad del higado:</label>
+		<input type="radio" id="Enfermedad del higado." class="med_inputs" name="enfermedades">
+			</td>
+			<td>
+		<label class="control-label">Enfermedad de riñones:</label>
+		<input type="radio" id="Enfermedad de riñones." class="med_inputs" name="enfermedades">
+	</td>
+		</tr>
+		<tr>
+			<td>
+		<label class="control-label">Enfermedades respiratorias:</label>
+		<input type="radio" id="Enfermedades respiratorias." class="med_inputs" name="enfermedades">
+			</td>
+			<td>
+		<label class="control-label">Osteoporosis:</label> 
+		<input type="radio" id="Osteoporosis." class="med_inputs" name="enfermedades">
+			</td>
+			<td>
+		<label class="control-label">Enfermedad cancerígenas:</label> 
+		<input type="radio" id="Enfermedad cancerígenas." class="med_inputs" name="enfermedades">
+			</td>
+			<td>
+		<label class="control-label">Sida:</label> 
+		<input type="radio" id="Sida." class="med_inputs" name="enfermedades">
+			</td>
+		</tr>
+		<tr>
+			<td>
+		<label class="control-label">Parasitósis:</label> 
+		<input type="radio" id="Parasitósis." class="med_inputs" name="enfermedades">
+			</td>
+			<td>
+		<label class="control-label">Cólera:</label> 
+		<input type="radio" id="Cólera." class="med_inputs" name="enfermedades">
+			</td>
+	</tr>
+		</table>
+	</div>
+		</div>
+	</form>
+	<div id="div_frm_secundario">
+	<form id="frm_secundario" class="form-horizontal">
+		<label id="med_dat">Datos del médico</label>
+		<div class="control-group">
+		<label class="control-label">Nombre del médico:</label>
+		<input type="text" class="med_inputs_sec" name="nombre_medico" class="controls">
+		</div>
+		<div class="control-group">
+		<label class="control-label">Especialidad del médico:</label>
+		<input type="text" class="med_inputs_sec" name="especialidad" class="controls">
+		</div>
+		<div class="control-group">
+		<label class="control-label">Teléfono:</label>
+		<input type="text" class="med_inputs_sec" name="numero_telf" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" class="controls" placeholder="000 000 000">
+		</div>
+		<div class="control-group">
+		<label class="control-label">Dirección hospital</label>
+		<input type="text" class="med_inputs_sec" name="dir_hospital" class="controls">
+		</div>
+		<input type="submit" class="med_inputs_sec" name="enviar_frm_sec" value="Guargar" class="btn btn-inverse">
+
+		<input type="button" class="med_inputs_sec" name="cerrar_frm_sec" value="volver" class="btn btn-inverse">
+	</form>
+</div>
+<img src="/images/corazon.png" id="corazon"/>
+</body>
+</html>
